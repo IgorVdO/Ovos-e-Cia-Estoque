@@ -42,8 +42,11 @@ function adicionarProduto(nome, quantidade) {
 
     // Adiciona o evento de clique ao botão de excluir
     produtoDiv.querySelector('.excluir').addEventListener('click', function() {
+        var resposta = confirm('Você tem certeza que quer apagar?')
+        if (resposta) {
         estoqueArea.removeChild(produtoDiv);
         atualizarLocalStorage();
+        }
     });
 
     // Adiciona o produto ao estoque
