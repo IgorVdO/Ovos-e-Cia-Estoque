@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9CB00;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    max-width: 600px;
+    margin: 0;
+}
+
+#logo {
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#quantidadeProduto {
+    width: 90px;
+}
+
+#adicionarProduto {
+    padding: 10px 20px;
+    border: none;
+    border-top-right-radius: 15px;
+    background-color: #48B2FF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+.estoque-area {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 90px 30px 30px;
+    gap: 0;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    height: 40px;
+    padding-left: 10px;
+    scale: 1.1;
+}
+
+.produto p {
+    margin: 0;
+}
+
+.produto button {
+    background-color: #FF2525;
+    color: #fff;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#menosBtn {
+    border-right: 1px solid #fff;
+}
+
+input {
+    outline: none;
+}
