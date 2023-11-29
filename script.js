@@ -63,5 +63,11 @@ function atualizarLocalStorage() {
             quantidade: produto.querySelector('p:nth-child(2)').innerText
         };
     });
+
+    // Classifica os produtos por ordem alfabética
+    produtos.sort(function(a, b) {
+        return a.nome.localeCompare(b.nome);
+    });
+
     localStorage.setItem('produtos', JSON.stringify(produtos));
 }
